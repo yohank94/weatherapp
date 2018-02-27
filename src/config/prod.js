@@ -1,3 +1,3 @@
 module.exports = {
-  weatherAPI: process.env.WEATHER_API
+  weatherAPI: process.env.REACT_APP_WEATHER_API
 };
