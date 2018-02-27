@@ -2,11 +2,7 @@ import React, { Component } from 'react';
 
 import Predictions from './Predictions/Predictions';
 import SearchForm from './SearchForm';
-import keys from '../config/keys';
-
-console.log(process.env);
-console.log(process.env.NODE_ENV);
-console.log(keys.weatherAPI);
+const keys = require('../config/keys');
 
 const PREDSTYLE = {
   heigh: 'auto',
