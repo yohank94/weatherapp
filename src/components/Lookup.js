@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 
 import Predictions from './Predictions/Predictions';
 import SearchForm from './SearchForm';
-const keys = require('../config/keys');
+
+console.log(process.env.REACT_APP_WEATHER_API);
 
 const PREDSTYLE = {
   heigh: 'auto',
@@ -38,7 +39,7 @@ class Lookup extends Component {
     const obj = [];
     const res = await fetch(
       `https://api.openweathermap.org/data/2.5/forecast?q=${city}&type=like&units=imperial&APPID=${
-        keys.weatherAPI
+        process.env.REACT_APP_WEATHER_API
       }`
     );
     const json = await res.json();
