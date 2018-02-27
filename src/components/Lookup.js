@@ -4,10 +4,6 @@ import Predictions from './Predictions/Predictions';
 import SearchForm from './SearchForm';
 const keys = require('../config/keys');
 
-console.log(process.env.NODE_ENV);
-console.log(keys);
-console.log(keys.weatherAPI);
-
 const PREDSTYLE = {
   heigh: 'auto',
   width: 'auto',
