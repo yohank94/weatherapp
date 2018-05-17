@@ -8,7 +8,8 @@ import TempDisplay from './TempDisplay';
 const borderStyle = {
   width: 'auto',
   height: 'auto',
-  borderStyle: 'solid',
+  borderTop: 'solid',
+  borderBottom: 'solid',
   borderWidth: 1,
   textAlign: 'center',
   display: 'inline-block'
